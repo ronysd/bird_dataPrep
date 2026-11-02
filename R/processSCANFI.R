@@ -1089,7 +1089,7 @@ processSCANFI <- function(
       }
     }, logical(1)))
   }
-  browser()
+  #browser()
   # ===========================================================================
   # PROCESSED V1 / V2
   #

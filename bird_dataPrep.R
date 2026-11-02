@@ -88,7 +88,7 @@ doEvent.bird_dataPrep = function(sim, eventTime, eventType) {
 
 Init <- function(sim) {
   dPath <- "~/tmp/"
-  browser()
+  #browser()
   # Greenup Processing - 1km (or to study area res and extent)
   sim$match$greenupProcessed$greenup_1km <- processGreenupDormancy(sim$greenupURL,sim$studyAreaRas,
                                                                    varPrefix = "StandardGreenup") ## VarPrefix renames the layer to make them model-ready
@@ -125,7 +125,7 @@ Init <- function(sim) {
   sim$match$MODIS <- processLCC(sim$MODISurls,sim$studyAreaRas,processed = TRUE)
   
   sim$match$VLCE <- processLCC(sim$VLCEurls,sim$studyAreaRas,processed = TRUE)
-  browser()
+  #browser()
   sim$match$SCANFILCC <- processLCC(sim$SCANFILCCurls,sim$studyAreaRas,processed = FALSE)
   
   ## process climate normal data

@@ -3,7 +3,7 @@ processGreenupDormancy <- function(url, studyAreaRas, varPrefix = NULL) {
   dir.create(dPath, showWarnings = FALSE, recursive = TRUE)
   
   message("Loading raster data from: ", url)
-  browser()
+  #browser()
   ras <- prepInputs(
     url = url,
     fun = quote({
